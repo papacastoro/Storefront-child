@@ -8,4 +8,6 @@ Template: 		Storefront
 */
 @import url(../Storefront/style.css);
 
-
+html{
+	font-family:Arial;
+    }
