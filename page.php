@@ -12,7 +12,7 @@
 
 get_header();
 ?>
-<<<<<<< HEAD
+
 <div class="entry-content"> 
 	<ul class="product_list_widget">
 	<?php 
@@ -29,7 +29,7 @@ get_header();
 	}	
 	?>
 	</ul>
-=======
+
 
 	<div id="primary" <ul class="products">
 	<?php
@@ -55,6 +55,6 @@ get_header();
 		wp_reset_postdata();
 	?>
 </ul>
->>>>>>> origin/master
+
 </div>
 

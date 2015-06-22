@@ -4,10 +4,5 @@
     <?php the_content(); ?>
 <?php endwhile; ?>
 <?php get_sidebar(); ?>
-<<<<<<< HEAD
 <?php get_footer(); ?>
-//larghezza video
-
-=======
 <?php get_footer(); ?>
->>>>>>> origin/master
