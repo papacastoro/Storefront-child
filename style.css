@@ -8,6 +8,10 @@ Template: 		Storefront
 */
 @import url(../Storefront/style.css);
 
+<<<<<<< HEAD
 html{
 	font-family:Arial;
     }
+=======
+h1 {backgorund-color: red;}
+>>>>>>> origin/master

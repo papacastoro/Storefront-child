@@ -12,6 +12,7 @@
 
 get_header();
 ?>
+<<<<<<< HEAD
 <div class="entry-content"> 
 	<ul class="product_list_widget">
 	<?php 
@@ -28,5 +29,32 @@ get_header();
 	}	
 	?>
 	</ul>
+=======
+
+	<div id="primary" <ul class="products">
+	<?php
+		$args = array(
+			'post_type' => 'product',
+			'per_page' => 3,
+					);
+		
+		/*$args = array(
+				'columns' => '2',
+				'orderby' => 'title',
+				'order' => 'asc'
+		);*/
+		
+		$loop = new WP_Query( $args );
+		if ( $loop->have_posts() ) {
+			while ( $loop->have_posts() ) : $loop->the_post();
+				woocommerce_get_template_part( 'content', 'product' );
+			endwhile;
+		} else {
+			echo __( 'Nessun prodotto' );
+		}
+		wp_reset_postdata();
+	?>
+</ul>
+>>>>>>> origin/master
 </div>
 

@@ -11,6 +11,7 @@
  * @package storefront
  */
 
+<<<<<<< HEAD
 
 get_header(); ?>
 
@@ -50,6 +51,10 @@ get_header(); ?>
     </ul><!-- /row-fluid -->
 </section><!-- /recent -->   
         
+=======
+get_header(); ?>
+
+>>>>>>> origin/master
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -67,6 +72,11 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php do_action( 'storefront_sidebar' ); ?>
+<<<<<<< HEAD
                  
 		
 <?php get_footer(); ?>         
+=======
+		
+<?php get_footer(); ?>
+>>>>>>> origin/master

@@ -18,6 +18,10 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	return;
 }
 ?>
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 <div id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 
@@ -29,7 +33,10 @@ do_action('');
 <!-- #secondary -->
 </div>
 
+<<<<<<< HEAD
 <?php
             $args = array( 'post_type' => 'product', 'stock' => 1, 'posts_per_page' => 3, 
             				'orderby' =>'date','order' => 'ASC' );
             $loop = new WP_Query( $args );?>
+=======
+>>>>>>> origin/master
