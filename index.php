@@ -11,14 +11,13 @@
  * @package storefront
  */
 
-
-get_header(); ?>
+get_header()?>
 
 <section id="recent">
 
     <h1>Aggiunti di recente</h1>
 
-    <ul class="row-fluid">
+    <ul class="content-area">
 
         <?php
             $args = array( 'post_type' => 'product', 'stock' => 1, 'posts_per_page' => 3, 
@@ -32,7 +31,8 @@ get_header(); ?>
 
              <?php if (has_post_thumbnail( $loop->post->ID )) 
                    echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); 
-              else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="10px" height="10px" />'; 
+              	else 
+              	echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="10px" height="10px" />'; 
               ?>
 
               <h3>
@@ -47,13 +47,9 @@ get_header(); ?>
         <?php endwhile; ?>
         <?php wp_reset_query(); ?>
 
-    </ul><!-- /row-fluid -->
+        </ul><!-- /row-fluid -->
 </section><!-- /recent -->   
         
-
-get_header(); ?>
-
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -71,9 +67,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php do_action( 'storefront_sidebar' ); ?>
-
-                 
-		
+	
 <?php get_footer(); ?>         
 		
 <?php get_footer(); ?>

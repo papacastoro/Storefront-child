@@ -9,10 +9,12 @@ Template: 		Storefront
 @import url(../Storefront/style.css);
 
 
-html
+.html
 	{
 	 font-family:Arial;
     }
 
-
-
+.site-header
+	{
+	background-color:##FF7514;
+	}
