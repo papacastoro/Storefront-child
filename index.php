@@ -13,6 +13,8 @@
 
 get_header()?>
 
+<?php get_sidebar('sidebar2');?>  <!-- la mia sidebar -->   
+
 <section id="recent">
 
     <h1>Aggiunti di recente</h1>
@@ -49,19 +51,21 @@ get_header()?>
 
         </ul><!-- /row-fluid -->
 </section><!-- /recent -->   
-        
-	<div id="primary" class="content-area">
+
+	
+			     
+
+<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
-
-			<?php get_template_part( 'loop' ); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
+		<?php 
+			if (have_posts()) {
+				get_template_part( 'loop' );
+			}
+			else { 			
+				get_template_part( 'content', 'none' );  
+			}
+		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
@@ -70,4 +74,5 @@ get_header()?>
 	
 <?php get_footer(); ?>         
 		
-<?php get_footer(); ?>
+
+
