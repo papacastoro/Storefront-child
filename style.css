@@ -25,14 +25,6 @@ Template: 		Storefront
 	color:#FFFFFF;
 		   }
 		   
-/* Sfondo footer */
-
-.site-footer 
-{background-color: #c1e5fe;}
-
-/* Colore bottone collegamento */
-
-.site-footer a:not(.button) 
-	{
-	color:#ee2;
-	}
+p.site-description {
+  color: #FFFFFF;
+}
