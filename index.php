@@ -11,10 +11,14 @@
  * @package storefront
  */
 
+/* 
+ * Richiamo header
+ */
+
 get_header()?>
 
-<?php dynamic_sidebar('sidebar2'); ?>  <!-- la mia sidebar -->   
-
+<!-- Mostrare aggiunti di recente -->
+ 
 <section id="recent">
 
     <h1>Aggiunti di recente</h1>
@@ -34,7 +38,7 @@ get_header()?>
              <?php if (has_post_thumbnail( $loop->post->ID )) 
                    echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); 
               	else 
-              	echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="10px" height="10px" />'; 
+              	echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" class="img-piccola" />'; 
               ?>
 
               <h3>
@@ -52,7 +56,9 @@ get_header()?>
         </ul><!-- /row-fluid -->
 </section><!-- /recent -->   
 
-	
+<!-- Fine funzione -->
+
+<?php dynamic_sidebar('sidebar2'); ?>  <!-- la mia sidebar -->  	
 			     
 
 <div id="primary" class="content-area">
