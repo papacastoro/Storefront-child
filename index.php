@@ -13,7 +13,7 @@
 
 get_header()?>
 
-<?php get_sidebar('sidebar2');?>  <!-- la mia sidebar -->   
+<?php dynamic_sidebar('sidebar2'); ?>  <!-- la mia sidebar -->   
 
 <section id="recent">
 
