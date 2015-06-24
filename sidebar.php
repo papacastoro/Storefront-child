@@ -11,7 +11,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 <div id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-	<?php woocommerce_template_single_title(); ?>
 	
 	/**
 	 restituisce un numero definito di prodotti (immagine+titolo) in una parte del sito
