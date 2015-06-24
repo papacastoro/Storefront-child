@@ -4,12 +4,11 @@ Theme URI:    	http://www.woothemes.com/storefront
 Author:       	Dragon
 Description:  	Storefront-child modifica del tema Storefront
 Version:      	1.4.5
-License:      	GNU General Public License v2 or later
-License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+Template:		Storefront
 Text Domain:  	storefront
 */
 
-@import url('../storefront/style.css');
+@import url('../Storefront/style.css');
 
 /*  colore icona cerca */
 		   
