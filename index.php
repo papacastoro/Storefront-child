@@ -17,7 +17,7 @@
 
 get_header()?>
 
-<!-- Mostrare aggiunti di recente -->
+<!-- Mostrare prodotti aggiunti di recente -->
  
 <section id="recent">
 
