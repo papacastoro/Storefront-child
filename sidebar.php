@@ -12,9 +12,8 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 <div id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 	
-	/**
-	 restituisce un numero definito di prodotti (immagine+titolo) in una parte del sito
-	*/
+	<!--	 restituisce un numero definito di prodotti (immagine+titolo) in una parte del sito -->
+	
 	<?php
 		$args = array( 'post_type' => 'product', 'posts_per_page' => 1);
 		$loop = new WP_Query( $args );
@@ -30,9 +29,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		wp_reset_query();
 		
 		?>
-				
-	
-	
 	 	
 </div><!-- #secondary -->
 
