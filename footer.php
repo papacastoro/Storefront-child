@@ -9,7 +9,8 @@
 ?>
 
 		</div><!-- .col-full -->
-	</div><!-- #content -->
+<?php woocommerce_button_proceed_to_checkout() ?>
+		</div><!-- #content -->
 
 	<?php do_action( 'storefront_before_footer' ); ?>
 
@@ -30,9 +31,11 @@
 
 </div><!-- #page -->
 
+
 <?php wp_footer(); ?>
 
+<?php get_product_search_form() ?>
 </body>
 </html>
-<?php ?>
+
 
