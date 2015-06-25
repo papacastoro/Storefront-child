@@ -9,7 +9,6 @@
 ?>
 
 		</div><!-- .col-full -->
-	
 		</div><!-- #content -->
 
 	<?php do_action( 'storefront_before_footer' ); ?>
@@ -30,7 +29,8 @@
 	<?php do_action( 'storefront_after_footer' ); ?>
 
 </div><!-- #page -->
-
+<div class="site-footer">
+<?php dynamic_sidebar('sidebar2'); ?>  <!-- la mia sidebar -->  </div>
 
 <?php wp_footer(); ?>
 </body>
